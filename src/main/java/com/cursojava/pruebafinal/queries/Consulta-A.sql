@@ -1,0 +1,1 @@
+SELECT film.film_id, film.title, film.length, film.rental_duration, film.rental_rate, film.rating FROM film WHERE film.description LIKE '%Secret Agent%' AND film.rental_duration >= 5 ORDER BY film.rental_duration DESC, film.rental_rate ASC;

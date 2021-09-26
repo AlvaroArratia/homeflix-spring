@@ -1,0 +1,1 @@
+SELECT film.title, film.length, film.release_year, film.rental_rate, film.special_features FROM film WHERE film.rating = 'R' ORDER BY film.length DESC LIMIT 0, 10;

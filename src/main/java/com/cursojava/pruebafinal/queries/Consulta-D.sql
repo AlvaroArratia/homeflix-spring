@@ -1,0 +1,1 @@
+SELECT film.rating, COUNT(film.film_id) AS count FROM film JOIN language ON language.language_id=film.original_language_id WHERE language.name = 'French' GROUP BY film.rating ORDER BY count DESC;
